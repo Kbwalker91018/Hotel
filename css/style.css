@@ -1,20 +1,90 @@
 *{
+    margin: 5px;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #dbd3d3;
+    /* min-height: 100vh; */
+}
+body{
+  background-image: linear-gradient(to right, rgba(7, 6, 6, 0.966), rgba(39, 53, 75, 0.61)),url(/images/jorg-angeli-1tyuLfDOnG0-unsplash.jpg);
+  background-size: cover;
 }
 
 #home{
-    /* display: flex; */
-
     #navbar{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        align-items: center;
+        /* margin: auto 0; */
         ul{
             display: flex;
             list-style: none;
         }
 
         li{
-            padding: 0 10px;
+            padding: 0 15px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+    #welcome{
+        display: flex;
+        flex-direction: column;
+        margin: 9% 0;
+        align-items: center;
+        h1{
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+        }
+        li{
+            padding: 0 15px;
+            font-size: 20px;
+        }
+        button{
+            width: 150px;
+            margin-top: 25px;
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: transparent;
+            border: 2px solid #dbd3d3;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            &:hover{
+                background-color: #dbd3d3;
+                color: #524b4b;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #home{
+        #navbar{
+            flex-direction: column;
+            ul{
+                flex-direction: column;
+                li{
+                    padding: 8px 0;
+                }
+            }
+        }
+        #welcome{
+            h1{
+                font-size: 30px;
+            }
+            ul{
+                /* flex-direction: column; */
+                li{
+                    padding: 15px 0;
+                }
+            }
         }
     }
 }
