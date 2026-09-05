@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+
+#home{
+    /* display: flex; */
+
+    #navbar{
+        display: flex;
+        justify-content: space-between;
+        ul{
+            display: flex;
+            list-style: none;
+        }
+
+        li{
+            padding: 0 10px;
+        }
+    }
+}
